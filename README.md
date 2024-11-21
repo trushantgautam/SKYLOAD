@@ -81,18 +81,18 @@ Step 1:Configure ANTLR in IntelliJ with Maven
 
    a. Install the ANTLR v4 plugin from IntelliJ’s Plugin Marketplace if you haven’t already.
       For this navigate to File->Settings->Plugins
-   ![Alt text](doc/IMG/ANTLR-Download.png?raw=true "Optional Title")
+   ![Alt text](src/main/java/doc/IMG/ANTLR-Download.png?raw=true "Optional Title")
 
    b. Once installed, you can right-click on your grammar file (e.g., Skyload.g4) and select Generate ANTLR Recognizer to automatically create lexer and parser files.
 
-   ![Alt text](doc/IMG/Antlr-generate.png?raw=true "Optional Title")
+   ![Alt text](src/main/java/doc/IMG/Antlr-generate.png?raw=true "Optional Title")
 
    c. For quick Debugging of your grammar you can right click on the Grammar entry point and run Test Rule Program as shown below
 
-![Alt text](doc/IMG/ANTLR-PARSER.png?raw=true "Optional Title")
+![Alt text](src/main/java/doc/IMG/ANTLR-PARSER.png?raw=true "Optional Title")
 
    it should display parse tree as shown below
-![Alt text](doc/IMG/Factorial.png?raw=true "Optional Title")
+![Alt text](src/main/java/doc/IMG/Factorial.png?raw=true "Optional Title")
 
 Step 2: Generate Lexer and Parser Files
 
