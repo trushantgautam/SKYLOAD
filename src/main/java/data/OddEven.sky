@@ -1,0 +1,8 @@
+# Define the number to check
+define num := 7;
+
+# Use modulus to check if the number is even or odd
+define result := num % 2 is 0 ? "Even" : "Odd";
+
+# Display the result
+show_nl("The number ", num, " is: ", result);

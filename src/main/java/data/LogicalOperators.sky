@@ -1,0 +1,11 @@
+# Define boolean variables
+define a := yes;      # True
+define b := no;       # False
+
+# Test 'and' operator
+define and_result := yes;
+decide(and_result is yes and a is yes)
+{
+    show_nl("a AND b:", and_result);
+}
+
