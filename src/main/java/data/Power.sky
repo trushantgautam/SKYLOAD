@@ -1,0 +1,39 @@
+# Define the base and exponent
+define base := 3;
+define exponent := 4;
+
+# Initialize the result to 1 (since any number to the power of 0 is 1)
+define result := 1;
+
+# Loop to calculate base^exponent
+define i := 1;
+perform (i := 1; with i <= exponent; with i := i + 1;) {
+    result := result * base;
+}
+
+# Display the result of base^exponent
+show_nl(base, " raised to the power of ", exponent, " is: ", result);
+
+# Power with modulo
+define modulo := 5;
+define result_modulo := result % modulo;
+show_nl("The result of (", base, "^", exponent, ") % ", modulo, " is: ", result_modulo);
+
+# Factorial Calculation
+define factorial := 1;
+perform (i := 1; with i <= exponent; with i := i + 1;) {
+    factorial := factorial * i;
+}
+show_nl("Factorial of ", exponent, " is: ", factorial);
+
+# Display all powers of the base up to the given exponent
+show_nl("Powers of ", base, " from 1 to ", exponent, ":");
+define power := 1;
+define j := 1;
+perform (i := 1; with i <= exponent; with i := i + 1;) {
+    power :=1;
+    perform (j := 1; with j <= i; with j := j + 1;) {
+        power := power * base;
+    }
+    show_nl(base, " ^ ", i, " = ", power);
+}

@@ -1,0 +1,18 @@
+define x := 10;
+define y := 20;
+define test1 := yes;
+show_nl(x);
+show_nl(test1);
+show_nl(60/3/2);
+decide (test1 is yes) {
+    show_nl("Test is true");
+} otherwise {
+    show_nl("Test is false");
+}
+define condition2 :=6;
+decide(not (y is 20 and x is 13) and (x is 15))
+{
+    show_nl("No");
+}otherwise{
+show_nl("YES");
+}
